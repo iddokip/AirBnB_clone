@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-""" Class city that inherits from base model"""
+""" Class review that inherits from base model"""
 
 from models.base_model import BaseModel
 
 
-class City(BaseModel):
-    """ Class State  that inherits from base model """
-    state_id = ""
-    name = ""
+class Review(BaseModel):
+    """ Class Review that inherits from base model """
+    place_id = ""  # it will be the Place.id
+    user_id = ""  # it will be the User.id
+    text = ""
 
     def __init__(self, *args, **kwargs):
         """ Constructor """
